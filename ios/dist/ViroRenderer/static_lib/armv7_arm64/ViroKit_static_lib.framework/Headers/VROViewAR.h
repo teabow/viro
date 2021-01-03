@@ -114,4 +114,6 @@ enum class VROCameraPosition;
  */
 - (void)setDebugDrawDelegate:(NSObject<VRODebugDrawDelegate> *)debugDrawDelegate;
 
+- (CGPoint)gestureLocation:(UIGestureRecognizer *)recognizer;
+
 @end

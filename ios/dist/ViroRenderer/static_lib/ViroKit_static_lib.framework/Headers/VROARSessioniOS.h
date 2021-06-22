@@ -31,10 +31,13 @@
 #include "VROARSession.h"
 #include "VROViewport.h"
 #include <ARKit/ARKit.h>
+#include <SceneKit/SceneKit.h>
 #include <map>
 #include <vector>
 
 #include "VRORenderer.h"
+#include "VROVector3f.h"
+#include "VROQuaternion.h"
 
 class VRODriver;
 class VROVideoTextureCacheOpenGL;
@@ -115,9 +118,15 @@ private:
     /*
      The ARKit session, configuration, and delegate.
      */
+    ARSCNView *_sceneView;
     ARSession *_session;
     ARConfiguration *_sessionConfiguration;
     VROARKitSessionDelegate *_delegateAR;
+    
+    int64_t _prevUpdatedTime;
+    
+    VROVector3f _prevPosition;
+    VROQuaternion _prevRotation;
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 110300
     NSMutableSet<ARReferenceImage *> *_arKitImageDetectionSet;
@@ -197,7 +206,7 @@ private:
 /*
  Delegate for ARKit's ARSession.
  */
-API_AVAILABLE(ios(12.0)) @interface VROARKitSessionDelegate : NSObject<ARSessionDelegate> 
+API_AVAILABLE(ios(12.0)) @interface VROARKitSessionDelegate : NSObject<ARSessionDelegate, ARSCNViewDelegate>
 
 - (id)initWithSession:(std::shared_ptr<VROARSessioniOS>)session;
 

@@ -2473,7 +2473,7 @@
 		</dict>
 		<key>Headers/VROARAnchor.h</key>
 		<data>
-		5fqgOJhLXhtoqr5NdJv6wqrR62Y=
+		m0q8LZofzx5rPpSenHmWAwq22rM=
 		</data>
 		<key>Headers/VROARCamera.h</key>
 		<data>
@@ -2481,7 +2481,7 @@
 		</data>
 		<key>Headers/VROARConstraintMatcher.h</key>
 		<data>
-		9KdxGoAtNButNXgonccLLpzXy8w=
+		d72vNNWvueCeVbh6pOuuoizI440=
 		</data>
 		<key>Headers/VROARDeclarativeImageNode.h</key>
 		<data>
@@ -2581,7 +2581,7 @@
 		</data>
 		<key>Headers/VROARSessioniOS.h</key>
 		<data>
-		NfyQLmPCKokjHNt4U5PLwRR1QVI=
+		XROqVA+wkcoy3jFOTC2iL2Vjano=
 		</data>
 		<key>Headers/VROARShadow.h</key>
 		<data>
@@ -9034,11 +9034,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5fqgOJhLXhtoqr5NdJv6wqrR62Y=
+			m0q8LZofzx5rPpSenHmWAwq22rM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CRtn3Mf4DpOcM8h5AE9y+ohJGkGjfPgobABhGy3H7cM=
+			GJTDOvSoc269QuU1fy9QAfxrL882LtpBimWHPAfqCyU=
 			</data>
 		</dict>
 		<key>Headers/VROARCamera.h</key>
@@ -9056,11 +9056,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9KdxGoAtNButNXgonccLLpzXy8w=
+			d72vNNWvueCeVbh6pOuuoizI440=
 			</data>
 			<key>hash2</key>
 			<data>
-			7AXPQ/ojm/+vEBhLT9Uecq8D6XGXqCwUGsNpVsts/jI=
+			xNSf3CjX5Eh0088ytesnm+f45tlO+O4ODw4QY2kDBVo=
 			</data>
 		</dict>
 		<key>Headers/VROARDeclarativeImageNode.h</key>
@@ -9331,11 +9331,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NfyQLmPCKokjHNt4U5PLwRR1QVI=
+			XROqVA+wkcoy3jFOTC2iL2Vjano=
 			</data>
 			<key>hash2</key>
 			<data>
-			jrf9Gt+mTQXTOmaNe8koLzcD1mwI2Hvevjs9HJey50E=
+			JiMHjzI6Rph9Kgekj0IXiz2TuVbqRvjY2EY4fHTy/j0=
 			</data>
 		</dict>
 		<key>Headers/VROARShadow.h</key>

@@ -111,6 +111,13 @@ public:
             
             _node->setScale(scale);
             _node->setRotation(rotation);
+            _node->setPosition(position);
+            
+            /*
+            std::printf("\nrotationX : %f", rotation.X);
+            std::printf("\nrotationY : %f", rotation.Y);
+            std::printf("\nrotationZ : %f", rotation.Z);
+            std::printf("\nrotationW : %f", rotation.W);
             
             float diffX = _position->x - position.x;
             float diffY = _position->y - position.y;
@@ -118,11 +125,22 @@ public:
             
             bool isInitPos = _position->x == 0 && _position->y == 0 && _position->z == 0;
             
-            if (isInitPos || (std::abs(diffX) > 0.001 || std::abs(diffY) > 0.001 || std::abs(diffZ) > 0.001)) {
-                _node->setPosition(position);
-            }
+            std::printf("diffX : %f", diffX);
+            std::printf("diffY : %f", diffY);
+            std::printf("diffZ : %f", diffZ);
+            */
             
-            _position = &position;
+            /*
+            std::printf"diffX => " /diffX;
+            std::cout << "diffY => " << diffY;
+            std::cout << "diffZ => " << diffZ;
+            */
+             
+            //if (isInitPos || (std::abs(diffX) > 0.001 || std::abs(diffY) > 0.001 || std::abs(diffZ) > 0.001)) {
+                //_node->setPosition(position);
+            //}
+            
+            //_position = &position;
         }
     }
     
@@ -131,7 +149,9 @@ private:
     std::string _id;
     VROMatrix4f _transform;
     
-    VROVector3f* _position = new VROVector3f(0, 0, 0);
+    //VROQuaternion _rotation;
+    
+    // VROVector3f* _position = new VROVector3f(0, 0, 0);
 
     /*
      The node associated with this anchor.
